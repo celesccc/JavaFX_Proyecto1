@@ -19,8 +19,9 @@ public class Controller {
     private Button boton;
 
     public int aleatorio = 0;
+    public int input = 0;
 
-   @FXML
+    @FXML
     public void setLabelText() {
        aleatorio = (int) (Math.random()*11);
        label.setText(String.valueOf(aleatorio));
@@ -28,15 +29,29 @@ public class Controller {
 
     @FXML
     public void onInputEditText() {
-        if (editText.getText().equals(label.getText())) {
+        if (label.getText().equals(editText.getText())) {
             boton.setVisible(true);
             boton.setDisable(false);
             setLabelText();
-        } else {
+        }else
             boton.setDisable(true);
-        }
     }
+   /* public void onInputEditText() {
+        input++;
+        if (input % 2 != 0) {
+            if (label.getText().equals(editText.getText())) {
+                boton.setVisible(true);
+                setLabelText();
+            }
+        } else {
+            if (label.getText().equals(editText.getText()))
+                boton.setDisable(false);
+            else
+                boton.setDisable(true);
+        }
+    }*/
 
+    @FXML
     public void onClickBoton() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("newWindow.fxml"));
