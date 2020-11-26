@@ -7,7 +7,7 @@
 
 <GridPane alignment="center" hgap="10" onMouseEntered="#setLabelText" style="-fx-background-color: #F6CEF5;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: #F781F3;" textAlignment="CENTER" textFill="#960aae" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefWidth="50.0" style="-fx-background-color: #F781F3;" textAlignment="CENTER" textFill="#960aae" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <font>
             <Font name="Aharoni Bold" size="24.0" />
          </font>
